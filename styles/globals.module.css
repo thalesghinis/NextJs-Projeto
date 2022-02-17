@@ -1,0 +1,11 @@
+.container {
+  background-color: #141414;
+  margin: 0mm;
+}
+
+.footer {
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+  line-height: 20px;
+}

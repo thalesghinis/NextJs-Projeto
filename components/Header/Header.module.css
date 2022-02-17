@@ -1,0 +1,33 @@
+.Styleheader {
+    /* position: fixed; */
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    background: transparent;
+    transition: 0.5s;
+}
+
+  .headeravatar {
+    background-image: url(../../public/user.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.headerlogo a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
