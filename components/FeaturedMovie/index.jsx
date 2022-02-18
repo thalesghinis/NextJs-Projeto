@@ -36,7 +36,7 @@ export default ({item}) => {
                             <a className={styles.featuredwatchbutton} href={`/watch/${item.id}`}>Assistir</a>
                             <a className={styles.featuredmylistbutton} href={`/list/${item.id}`}>Minha Lista</a>
                         </div>
-                        <div className={styles.featuredgenres}>Generos: {genres.join(', ')}</div>
+                        <div className={styles.featuredgenres}>Gêneros: {genres.join(', ')}</div>
                     </div>
                 </div>
             </div>

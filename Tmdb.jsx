@@ -1,7 +1,7 @@
 const API_KEY = 'bc6485e4b6edc5b3078635d23a8910e8';
 const API_BASE = 'https://api.themoviedb.org/3';
 
-// originais - recomendados - mais votados - action - comedy - terror - romance - documentary 
+// buscas: originais - recomendados - mais votados - action - comedy - terror - romance - documentary 
 
 const basicFetch = async (endpoint) => {
     const req = await fetch(`${API_BASE}${endpoint}`);
@@ -29,12 +29,12 @@ export default {
             },
             {
                 slug: 'action',
-                title: 'Acao',
+                title: 'Ação',
                 items: await basicFetch(`/discover/movie?with_genres=28&language=pt-BR&api_key=${API_KEY}`),
             },
             {
                 slug: 'comedy',
-                title: 'Comedia',
+                title: 'Comédia',
                 items: await basicFetch(`/discover/movie?with_genres=35&language=pt-BR&api_key=${API_KEY}`),
             },
             {
@@ -49,7 +49,7 @@ export default {
             },
             {
                 slug: 'documentary',
-                title: 'Documentarios',
+                title: 'Documentários',
                 items: await basicFetch(`/discover/movie?with_genres=99&language=pt-BR&api_key=${API_KEY}`),
             },
         ];
@@ -60,10 +60,10 @@ export default {
         if(movieId) {
             switch(type) {
                 case 'movie':
-                    info = await basicFetch(`/movie/${movieId}?language=pet-BR&api_key=${API_KEY}`)
+                    info = await basicFetch(`/movie/${movieId}?language=pt-BR&api_key=${API_KEY}`)
                 break;
                 case 'tv':
-                    info = await basicFetch(`/tv/${movieId}?language=pet-BR&api_key=${API_KEY}`)
+                    info = await basicFetch(`/tv/${movieId}?language=pt-BR&api_key=${API_KEY}`)
                 break;
                 default:
                     info = null

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './MovieRow.module.css';
-// import {NavigateBeforeIcon} from '@mui/icons-material/NavigateBefore';
-// import {NavigateNextIcon} from '@mui/icons-material/NavigateNext';
+import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default ({title, items}) => {
     const [scrollX, setScrollX] = useState(0);
@@ -27,10 +27,10 @@ export default ({title, items}) => {
         <div className={styles.movieRow}>
             <h2>{title}</h2>
             <div className={styles.movieRowleft} onClick={handleLeftArrow}>
-                {/* <NavigateBeforeIcon style={{fontSize: 50}}/> */}
+                <NavigateBeforeIcon style={{fontSize: 50, color: 'white'}}/>
             </div>
             <div className={styles.movieRowright} onClick={handleRightArrow}>
-                {/* <NavigateNextIcon style={{fontSize: 50}}/> */}
+                <NavigateNextIcon style={{fontSize: 50}}/>
             </div>
             <div className={styles.movieRowlistarea}>
                 <div className={styles.movieRowlist} style={{ marginLeft: scrollX, width: items.results.length * 150}}>

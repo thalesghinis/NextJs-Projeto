@@ -1,5 +1,10 @@
 .movieRow {
-    margin-bottom: 30px;
+    margin-bottom: 150px;
+    margin-top: -150px;
+}
+
+.movieRow:last-child {
+    margin-bottom: 0;
 }
 
 .movieRow h2 {
@@ -54,10 +59,12 @@
 
 .movieRowright {
     right: 0;
+    color: white;
 }
 
 .movieRowleft {
     left: 0;
+    color: white;
 }
 
 @media (max-width:760px) {
